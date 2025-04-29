@@ -67,7 +67,7 @@ def main():
                 quantity = int(quantity_str)
                 if quantity <= 0:
                     print("Invalid Amount")
-                else: 
+                else:
                     result = manager.remove_item(item, quantity)
                     print("\n", result)
 
