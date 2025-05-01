@@ -19,7 +19,7 @@ class FruitInventoryManager:
             if data.inventory[item] >= quantity:
                 data.inventory[item] -= quantity
                 return True
-            elif data.inventory[item]==quantity:
+            elif data.inventory[item] == quantity:
                 del data.inventory[item]
                 return True
         return False
@@ -73,7 +73,8 @@ def main():
                             print(f"\n{item} not found.")
                         else:
                             available = data.inventory.get(item, 0)
-                            print(f"Cannot remove {item} of {quantity}. Only {available} available.")
+                            print(f"Can't remove {item} of {quantity}. \
+                                Only {available} available.")
 
             elif choice == "3":
                 inventory = manager.view_inventory()

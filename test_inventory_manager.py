@@ -37,7 +37,7 @@ class TestInventoryManager(unittest.TestCase):
         self.manager.add_item("mango", 5)
         result = self.manager.remove_item("mango", 0)
         self.assertFalse(result)
-        self.assertEqual(data.inventory["mango"], 5) 
+        self.assertEqual(data.inventory["mango"], 5)
 
     def test_remove_item_negative_quantity(self):
         self.manager.add_item("cherry", 5)
